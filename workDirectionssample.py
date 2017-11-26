@@ -9,9 +9,9 @@ from selenium.webdriver.support.ui import WebDriverWait
 import datetime
 import time
 
-#Set specific work day that you want reminder for.
+#Set specific work day that you want reminder  for.
 #Code sleeps every second until after time set in workDay variable
-workDay = datetime.datetime(2017,11,28,6,55,0)
+workDay = datetime.datetime(2017,11,28,6,55,0)#Enter date and time you want the program to start.
 
 while datetime.datetime.now() < Workday:
     time.sleep(1)
