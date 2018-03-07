@@ -48,6 +48,7 @@ elem3 = driver.find_element_by_xpath('//*[@id="section-directions-trip-0"]/div[2
 elem3.click()
 elem4 = driver.find_element_by_xpath('//*[@id="pane"]/div/div[2]/div/div/div[2]/div[3]/div[1]/button')
 elem4.click()
+#Sign in button
 signIn = driver.find_element_by_xpath('//*[@id="pane"]/div/div[2]/div/div/div[2]/div[3]/div[1]/div/div/button')
 signIn.click()
 userName = driver.find_element_by_xpath('//*[@id="identifierId"]')
@@ -55,15 +56,15 @@ userName.click()
 
 #Type in Google username
 userName.send_keys('type in username')
-elemNext = driver.find_element_by_xpath('//*[@id="identifierNext"]/content')
+elemNext = driver.find_element_by_xpath('xpath for "next button" ')
 elemNext.click()
 driver.implicitly_wait(20)
 
 #Type in Google password
-elemPass = driver.find_element_by_xpath('//*[@id="password"]/div[1]/div/div[1]/input')
+elemPass = driver.find_element_by_xpath('xpath for password box)
 elemPass.send_keys('type in password')
 elemNext2 = driver.find_element_by_xpath('//*[@id="passwordNext"]/content/span')
 elemNext2.click()
-#Send text to the phone number in your google profile
+#Send a text to the phone number in your google profile with link to directions with fastest route
 sendText = driver.find_element_by_xpath('//*[@id="modal-dialog-widget"]/div[2]/div/div[3]/div/div/div[2]/div[3]/div/div[1]/span[3]/span[1]/button')
 sendText.click()
